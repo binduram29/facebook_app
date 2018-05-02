@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'omniauth-facebook'
 gem 'pry'
 gem 'dotenv'
+gem 'heroku'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
