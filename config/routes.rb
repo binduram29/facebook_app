@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
-  get '/users/auth/:provider/callback', to: 'sessions#create', :via => [:get, :post]
+  get '/users/auth/:provider/callback', to: 'sessions#new', :as => :signin, :via => [:get, :post]
   get '/auth/:provider/callback' => 'sessions#create', :via => [:get, :post]
   #get '/sessions/create/callback' => 'sessions#create', :via => [:get, :post]
   match '/signout' => 'sessions#destroy', :as => :signout, :via => [:get, :post]
